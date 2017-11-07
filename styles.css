@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #eceff1;
+}
+a:hover {
+    text-decoration: none;
+}
+
+@keyframes color-animation {
+    0% {
+        background: #eeeeee;
+    }
+    25% {
+        background: #ff54ac;
+    }
+    50% {
+        background: #fc3535;
+    }
+    75% {
+        background: #ffc854;
+    }
+    100% {
+        background: #54ceff;
+    }
+}
+
+body {
+    font-size: 16pt;
+    font-family: "Quicksand", sans-serif;
+    text-align: center;
+    animation: color-animation 20s infinite linear alternate;
+    color: #fff;
+}
+
+h1 {
+    font-size: 3.5vw;
+}
+h1 span {
+    margin-right: 10px;
+    cursor: text;
+}
+h1 span:hover {
+    border-bottom: 4px solid #eceff1;
+}
+
+h2 {
+    font-size: 20vw;
+}
+
+.display {
+    height: 80vh;
+    padding: 80px 50px 80px 50px;
+}
+  
+.blink {
+    color: #eceff1;
+    -webkit-animation: blink 1000ms step-end infinite;
+    animation: blink 1000ms step-end infinite;
+}
+
+@-webkit-keyframes blink { 50% { color: #f3f3f3; }}
+@keyframes blink { 50% { color: #f3f3f3; }}
+
+input, button {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 2.5vw;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    padding: 10px;
+    border: none;
+    border-radius: 10px 10px 10px;
+    outline: none;
+    box-shadow: none;
+    text-align: center;
+}
+
+input {
+    background-color: rgba(46, 46, 46, 0.062);
+    margin-right: 20px;
+}
+
+input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+}
+input::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+}
+input:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+}
+input:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+}
+
+input:hover, button:hover {
+    background-color: rgba(46, 46, 46, 0.144);
+}
+
+button {
+    background-color: rgba(46, 46, 46, 0.103);
+    cursor: pointer;
+}
