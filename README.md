@@ -1,6 +1,6 @@
 # ![](icon-48.png) Beautiful Digital Clock
 
-![](screenshots/ui-chrome-extension-digital-clock.png) 
+![](Screenshots/ui-chrome-extension-digital-clock.png)
 
 ## What Is It?
 
